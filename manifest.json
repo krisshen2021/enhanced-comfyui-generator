@@ -1,0 +1,10 @@
+{
+    "display_name": "[Muffin]Enhanced ComfyUI Generator",
+    "description": "一个基于 LiteGraph.js 的可视化工作流编辑器，用于创建和管理 ComfyUI 的图像生成工作流",
+    "author": "SillyTavern Community", 
+    "version": "1.0.0",
+    "loading_order": 50,
+    "js": "index.js",
+    "css": "style.css",
+    "settings": "settings.html"
+}

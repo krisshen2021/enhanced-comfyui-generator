@@ -1,0 +1,649 @@
+/* Enhanced ComfyUI Generator 扩展样式 */
+/* settings.html styles*/
+.enhanced-comfyui-generator-settings .inline-drawer {
+    /* margin-bottom: 15px; */
+}
+.enhanced-comfyui-generator-settings .inline-drawer-toggle.inline-drawer-header {
+    color: rgb(255, 77, 0);
+}
+
+.enhanced-comfyui-generator-settings .inline-drawer-toggle.inline-drawer-header:hover {
+    filter: brightness(1.1) !important;
+}
+.enhanced-comfyui-generator-settings .settings-section{
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 4px;
+}
+.enhanced-comfyui-generator-settings .checkbox{
+    transform: scale(1.2);
+    margin-right: 6px;
+    border-radius: 50%;
+    background-color: rgb(255, 77, 0);
+    border: none;
+    padding: 4px;
+}
+.enhanced-comfyui-generator-settings small {
+    font-size: 0.7em;
+    color: rgb(255, 77, 0) !important;
+    text-shadow: 0 0 10px rgb(255, 77, 0);
+    font-style: normal;
+    padding: 4px 10px;
+    background-color: rgba(0, 0, 0, 0.545);
+    border-radius: 5px;
+    border-left: 3px solid rgb(255, 77, 0);
+    display: block;
+}
+.enhanced-comfyui-generator-settings .flex-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.enhanced-comfyui-generator-settings h4 {
+    margin: 0;
+    font-weight: 600;
+    color: rgb(255, 77, 0);
+    text-shadow: 0 0 10px rgb(255, 77, 0);
+    border-radius: 6px;
+    padding: 6px 10px 6px 0px;
+    font-size: 0.9em;
+}
+
+.enhanced-comfyui-generator-settings h4::before {
+    content: "⚙";
+    margin-right: 8px;
+}
+.enhanced-comfyui-generator-settings .settings-panel {
+    margin-top: 0px;
+    border-left: 2px solid rgb(68,68,68);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #00000078;
+}
+.enhanced-comfyui-generator-settings .btn {
+    background-color: rgb(255, 77, 0) !important;
+    color: white !important;
+    border: none !important;
+    /* box-shadow: 0 0 10px rgb(255, 77, 0) !important; */
+    transition: all 0.2s ease;
+    padding: 8px 8px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    height: fit-content !important;
+    min-width: 80px !important;
+}
+.enhanced-comfyui-generator-settings .btn:hover {
+    filter: brightness(1.1) !important;
+    box-shadow: 0 0 5px rgb(255, 77, 0) !important;
+    cursor: pointer;
+}
+.enhanced-comfyui-generator-settings .text_pole {
+    padding: 6px 10px;
+    border: 1px solid rgb(82, 47, 31);
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-shadow: 0 0 3px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: border-color 0.2s ease;
+}
+.enhanced-comfyui-generator-settings .text_pole:focus {
+    border-color: rgb(255, 77, 0);
+    outline: none;
+}
+
+/* 模态窗口样式 */
+.workflow-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20000;
+}
+
+.workflow-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.workflow-modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* max-width: 1400px; */
+    /* background-color: #2a2a2a; */
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.workflow-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #1a1a1a, #474747);
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #444;
+    flex-shrink: 0;
+}
+
+.workflow-modal-header h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.workflow-modal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.workflow-modal-controls .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    min-width: auto;
+    background-color: #444;
+    color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.workflow-modal-controls .btn:hover {
+    background-color: #555;
+}
+
+.workflow-modal-controls .btn.btn-success {
+    background-color: #28a745;
+}
+
+.workflow-modal-controls .btn.btn-success:hover {
+    background-color: #218838;
+}
+
+.workflow-modal-body {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    /* background-color: #1a1a1a; */
+    border-radius: 0 0 8px 8px;
+    display: flex;
+}
+
+.workflow-canvas {
+    width: 100%;
+    height: 100%;
+    /* display: block;
+    background-color: #1a1a1a; */
+}
+
+/* 结果面板样式 */
+.workflow-result-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    background-color: rgba(42, 42, 42, 0.95);
+    border-left: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.workflow-result-header {
+    padding: 12px 16px;
+    background: linear-gradient(90deg, #1a1a1a, #2a2a2a);
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workflow-result-header h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-small {
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: transparent;
+    color: #ccc;
+    border: 1px solid #555;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-small:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.workflow-result-content {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.workflow-status {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    text-align: center;
+    background-color: #444;
+    color: #ccc;
+}
+
+.workflow-status.running {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.workflow-status.success {
+    background-color: #28a745;
+    color: white;
+}
+
+.workflow-status.error {
+    background-color: #dc3545;
+    color: white;
+}
+
+.workflow-progress {
+    margin-bottom: 16px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #17a2b8;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+}
+
+.workflow-images {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.workflow-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.workflow-images img:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+.workflow-result-image {
+    margin-bottom: 12px;
+}
+
+.workflow-result-image .image-info {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.workflow-result-image .image-info small {
+    color: #999;
+    font-size: 11px;
+}
+
+.workflow-error {
+    padding: 12px;
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    color: #ff6b6b;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* 任务队列样式 */
+.workflow-task-queue {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.workflow-task-card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: linear-gradient(90deg, #1a1a1a, #333);
+    border-bottom: 1px solid #444;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.task-title {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.task-time {
+    color: #999;
+    font-size: 11px;
+}
+
+.task-remove-btn {
+    padding: 2px 6px;
+    font-size: 11px;
+    background-color: transparent;
+    color: #999;
+    border: 1px solid #555;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.task-remove-btn:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.task-body {
+    padding: 12px;
+}
+
+.task-status {
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.task-status.running {
+    background-color: #17a2b8;
+    color: white;
+    box-shadow: 0 0 10px rgba(23, 162, 184, 0.3);
+}
+
+.task-status.success {
+    background-color: #28a745;
+    color: white;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+}
+
+.task-status.error {
+    background-color: #dc3545;
+    color: white;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.3);
+}
+
+.task-progress {
+    margin-bottom: 12px;
+}
+
+.task-progress .progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #333;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.task-progress .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #17a2b8, #20c997);
+    transition: width 0.5s ease;
+    position: relative;
+}
+
+.task-progress .progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: progress-shimmer 2s ease-in-out infinite;
+}
+
+@keyframes progress-shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.task-progress .progress-text {
+    font-size: 11px;
+    color: #ccc;
+    text-align: center;
+}
+
+.task-images {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.task-result-image {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.task-result-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.task-result-image img:hover {
+    transform: scale(1.02);
+}
+
+.task-result-image .image-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 8px;
+    text-align: center;
+}
+
+.task-result-image .image-info small {
+    color: #fff;
+    font-size: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.task-error {
+    padding: 8px 10px;
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05));
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    border-radius: 4px;
+    color: #ff6b6b;
+    font-size: 11px;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+
+.queue-controls {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.queue-controls .btn-small {
+    padding: 3px 6px;
+    font-size: 10px;
+    background-color: transparent;
+    color: #999;
+    border: 1px solid #555;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.queue-controls .btn-small:hover {
+    background-color: #444;
+    color: #fff;
+    border-color: #666;
+}
+
+/* 空状态样式 */
+.workflow-task-queue:empty::before {
+    content: '暂无任务';
+    display: block;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    font-style: italic;
+    padding: 20px;
+}
+
+#workflow-editor-modal #node-panel{
+    background-color: #2a2a2a;
+    border-left: 1px solid #444;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+#workflow-editor-modal #node-panel .dialog-header{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#workflow-editor-modal #node-panel .dialog-header .close{
+    margin-left: auto;
+    cursor: pointer;
+    color: #999;
+    font-size: 14px;
+    transition: color 0.2s ease;
+    background-color: #17a2b8;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+#workflow-editor-modal #node-panel .dialog-header .close:hover{
+    color: #fff;
+}
+#workflow-editor-modal #node-panel .dialog-content{
+    padding: 12px;
+    background-color: #2a2a2a;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+#workflow-editor-modal #node-panel .dialog-content .property{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    background-color: #444;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    align-items: center;
+}
+#workflow-editor-modal #node-panel .dialog-content .property .property_name{
+    padding:8px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    color: aqua;
+}
+#workflow-editor-modal #node-panel .dialog-content .property .property_value{
+    padding:8px;
+    background-color: #636363;
+    border-radius: 8px;
+    border:1px solid #4f4f4f;
+    overflow-x: auto;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+/* 设置页面样式 */
+#enhanced_comfyui_open_editor {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 5px;
+}
+
+/* css for settings page */
+#enhanced-comfyui-generator-settings .btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    background-color: #444 !important;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#enhanced-comfyui-generator-settings .btn:hover {
+    background-color: #555 !important;
+}

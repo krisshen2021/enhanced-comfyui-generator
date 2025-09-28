@@ -1,0 +1,85 @@
+<div class="enhanced-comfyui-generator-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>[Muffin] Enhanced ComfyUI Generator</b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div class="settings-section">
+                <!-- 扩展启用/禁用 -->
+                <div class="flex-container">
+                    <label class="checkbox_label" for="enhanced_comfyui_enabled">
+                        <input type="checkbox" id="enhanced_comfyui_enabled" class="checkbox" />
+                        <span>Enable Extension</span>
+                    </label>
+                </div>
+                <div class="settings-panel">
+                    <!-- ComfyUI API 地址配置 -->
+                    <div class="flex-container">
+                        <label for="enhanced_comfyui_api_url" class="title_restorable">
+                            <h4>ComfyUI API Address (Main)</h4>
+                        </label>
+                        <input id="enhanced_comfyui_api_url" class="text_pole" type="text"
+                            value="http://127.0.0.1:8188" />
+                        <small>Main ComfyUI server address for text-to-image and editor.<br><strong>Note:</strong>
+                            Requires adding
+                            <code>--enable-cors-header</code> parameter when starting ComfyUI</small>
+                    </div>
+
+                    <!-- 图生视频 ComfyUI API 地址配置 -->
+                    <div class="flex-container">
+                        <label for="enhanced_comfyui_api_url_i2v" class="title_restorable">
+                            <h4>ComfyUI API Address (Image to Video)</h4>
+                        </label>
+                        <input id="enhanced_comfyui_api_url_i2v" class="text_pole" type="text" placeholder="Leave empty to use main address" />
+                        <small>Optional ComfyUI server address specifically for image-to-video generation.<br>
+                            This allows you to preload video models on a separate instance to eliminate loading
+                            time.</small>
+                    </div>
+
+                    <!-- 当前工作流 -->
+                    <div class="flex-container">
+                        <div class="title_restorable">
+                            <h4>Current Workflow</h4>
+                        </div>
+                        <div style="display: flex; gap: 5px; align-items: center;">
+                            <select id="enhanced_comfyui_current_workflow" class="text_pole">
+                                <option value="">None</option>
+                            </select>
+                            <button id="delete-workflow-btn" class="btn"  disabled>
+                                <i class="fa fa-trash"></i> Delete
+                            </button>
+                        </div>
+                        <small>Default workflow used by the automation API.</small>
+                    </div>
+
+                    <!-- 默认宽度 -->
+                    <div class="flex-container">
+                        <label for="enhanced_comfyui_default_width" class="title_restorable">
+                            <h4>Default Width</h4>
+                        </label>
+                        <input id="enhanced_comfyui_default_width" class="text_pole" type="number" value="512"
+                            step="64" />
+                        <small>Default generation width used by the automation API.</small>
+                    </div>
+
+                    <!-- 默认高度 -->
+                    <div class="flex-container">
+                        <label for="enhanced_comfyui_default_height" class="title_restorable">
+                            <h4>Default Height</h4>
+                        </label>
+                        <input id="enhanced_comfyui_default_height" class="text_pole" type="number" value="768"
+                            step="64" />
+                        <small>Default generation height used by the automation API.</small>
+                    </div>
+                </div>
+                <!-- 打开编辑器按钮 -->
+                <div class="flex-container">
+                    <button id="open-workflow-editor" class="btn" disabled>
+                        <i class="fa fa-edit"></i> Open ComfyUI Workflow Editor
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
