@@ -20,9 +20,9 @@ ECG's core feature is its intelligent task management system, which solves commo
     - Manages all the complexity of queueing, polling, and result handling internally.
     - Returns results via a simple `onComplete` callback.
 - **Dynamic Workflow Management**:
-    - **Workflow Editor**: A powerful, integrated editor based on LiteGraph.js to create, modify, and test your ComfyUI workflows directly within SillyTavern.
+    - **Workflow Editor**: A powerful, integrated editor based on LiteGraph.js to modify, and test your ComfyUI workflows directly within SillyTavern.
     - **Automatic Discovery**: The extension automatically scans for and manages your ComfyUI workflow files (`.json`).
-    - **Dynamic Placeholder System**: Automatically replaces placeholders like `%prompt%`, `%width%`, `%height%`, `%seed%`, and `%input_image_url%` in your workflows at runtime.
+    - **Dynamic Placeholder System**: Automatically replaces placeholders like `%prompt%`, `%width%`, `%height%`, `%seed%`, `%time_stamp%` and `%image_name%` in your workflows at runtime.
 - **Robust Error Handling**: The internal task scheduler is designed to handle API errors and timeouts gracefully.
 
 ## Installation
